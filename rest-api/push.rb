@@ -14,7 +14,7 @@ rescue LoadError
 end
 
 begin
-  $credentials = YAML::load(File.open(File.join('./','credentials.yml')))
+  $credentials = YAML::load(File.open(File.join(File.dirname(__FILE__),'credentials.yml')))
 rescue
   puts "Please copy credentials.yml.template to credentials.yml and fill in with your master app's values"
   exit
