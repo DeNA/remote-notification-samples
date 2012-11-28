@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71D1EDFB1648877E001E9688 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D1EDFA1648877E001E9688 /* UIKit.framework */; };
+		71D1EDFD1648877E001E9688 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D1EDFC1648877E001E9688 /* Foundation.framework */; };
+		71D1EDFF1648877E001E9688 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D1EDFE1648877E001E9688 /* CoreGraphics.framework */; };
+		71D1EE051648877E001E9688 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71D1EE031648877E001E9688 /* InfoPlist.strings */; };
+		71D1EE071648877E001E9688 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D1EE061648877E001E9688 /* main.m */; };
+		71D1EE0B1648877E001E9688 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D1EE0A1648877E001E9688 /* AppDelegate.m */; };
+		71D1EE0E1648877E001E9688 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D1EE0D1648877E001E9688 /* ViewController.m */; };
+		71D1EE111648877E001E9688 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71D1EE0F1648877E001E9688 /* ViewController_iPhone.xib */; };
+		71D1EE141648877E001E9688 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71D1EE121648877E001E9688 /* ViewController_iPad.xib */; };
+		71D1EE22164887DB001E9688 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D1EE1A164887DB001E9688 /* CoreTelephony.framework */; };
+		71D1EE23164887DB001E9688 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D1EE1B164887DB001E9688 /* libsqlite3.dylib */; };
+		71D1EE24164887DB001E9688 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D1EE1C164887DB001E9688 /* MessageUI.framework */; };
+		71D1EE25164887DB001E9688 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D1EE1D164887DB001E9688 /* QuartzCore.framework */; };
+		71D1EE26164887DB001E9688 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D1EE1E164887DB001E9688 /* Security.framework */; };
+		71D1EE27164887DB001E9688 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D1EE1F164887DB001E9688 /* StoreKit.framework */; };
+		71D1EE28164887DB001E9688 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D1EE20164887DB001E9688 /* SystemConfiguration.framework */; };
+		71D1EE29164887DB001E9688 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D1EE21164887DB001E9688 /* Twitter.framework */; };
+		71E9341B1664370B004084DD /* MobageNDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E934191664370B004084DD /* MobageNDK.framework */; };
+		71E9341C1664370B004084DD /* NDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 71E9341A1664370B004084DD /* NDKResources.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		71990D811665A8E800784969 /* Credentials.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Credentials.h; sourceTree = "<group>"; };
+		71D1EDF61648877E001E9688 /* PushMobage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushMobage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D1EDFA1648877E001E9688 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		71D1EDFC1648877E001E9688 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		71D1EDFE1648877E001E9688 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		71D1EE021648877E001E9688 /* PushMobage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PushMobage-Info.plist"; sourceTree = "<group>"; };
+		71D1EE041648877E001E9688 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		71D1EE061648877E001E9688 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		71D1EE081648877E001E9688 /* PushMobage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PushMobage-Prefix.pch"; sourceTree = "<group>"; };
+		71D1EE091648877E001E9688 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		71D1EE0A1648877E001E9688 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		71D1EE0C1648877E001E9688 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		71D1EE0D1648877E001E9688 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		71D1EE101648877E001E9688 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		71D1EE131648877E001E9688 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		71D1EE1A164887DB001E9688 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		71D1EE1B164887DB001E9688 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		71D1EE1C164887DB001E9688 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		71D1EE1D164887DB001E9688 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		71D1EE1E164887DB001E9688 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		71D1EE1F164887DB001E9688 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		71D1EE20164887DB001E9688 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		71D1EE21164887DB001E9688 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		71E934191664370B004084DD /* MobageNDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobageNDK.framework; sourceTree = "<group>"; };
+		71E9341A1664370B004084DD /* NDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NDKResources.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71D1EDF31648877E001E9688 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D1EE22164887DB001E9688 /* CoreTelephony.framework in Frameworks */,
+				71D1EE23164887DB001E9688 /* libsqlite3.dylib in Frameworks */,
+				71D1EE24164887DB001E9688 /* MessageUI.framework in Frameworks */,
+				71D1EE25164887DB001E9688 /* QuartzCore.framework in Frameworks */,
+				71D1EE26164887DB001E9688 /* Security.framework in Frameworks */,
+				71D1EE27164887DB001E9688 /* StoreKit.framework in Frameworks */,
+				71D1EE28164887DB001E9688 /* SystemConfiguration.framework in Frameworks */,
+				71D1EE29164887DB001E9688 /* Twitter.framework in Frameworks */,
+				71D1EDFF1648877E001E9688 /* CoreGraphics.framework in Frameworks */,
+				71D1EDFD1648877E001E9688 /* Foundation.framework in Frameworks */,
+				71D1EDFB1648877E001E9688 /* UIKit.framework in Frameworks */,
+				71E9341B1664370B004084DD /* MobageNDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71D1EDEB1648877E001E9688 = {
+			isa = PBXGroup;
+			children = (
+				71D1EE001648877E001E9688 /* PushMobage */,
+				71D1EDF91648877E001E9688 /* Frameworks */,
+				71D1EDF71648877E001E9688 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71D1EDF71648877E001E9688 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71D1EDF61648877E001E9688 /* PushMobage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71D1EDF91648877E001E9688 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71E934191664370B004084DD /* MobageNDK.framework */,
+				71E9341A1664370B004084DD /* NDKResources.bundle */,
+				71D1EE1A164887DB001E9688 /* CoreTelephony.framework */,
+				71D1EE1B164887DB001E9688 /* libsqlite3.dylib */,
+				71D1EE1C164887DB001E9688 /* MessageUI.framework */,
+				71D1EE1D164887DB001E9688 /* QuartzCore.framework */,
+				71D1EE1E164887DB001E9688 /* Security.framework */,
+				71D1EE1F164887DB001E9688 /* StoreKit.framework */,
+				71D1EE20164887DB001E9688 /* SystemConfiguration.framework */,
+				71D1EE21164887DB001E9688 /* Twitter.framework */,
+				71D1EDFA1648877E001E9688 /* UIKit.framework */,
+				71D1EDFC1648877E001E9688 /* Foundation.framework */,
+				71D1EDFE1648877E001E9688 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		71D1EE001648877E001E9688 /* PushMobage */ = {
+			isa = PBXGroup;
+			children = (
+				71990D811665A8E800784969 /* Credentials.h */,
+				71D1EE091648877E001E9688 /* AppDelegate.h */,
+				71D1EE0A1648877E001E9688 /* AppDelegate.m */,
+				71D1EE0C1648877E001E9688 /* ViewController.h */,
+				71D1EE0D1648877E001E9688 /* ViewController.m */,
+				71D1EE0F1648877E001E9688 /* ViewController_iPhone.xib */,
+				71D1EE121648877E001E9688 /* ViewController_iPad.xib */,
+				71D1EE011648877E001E9688 /* Supporting Files */,
+			);
+			path = PushMobage;
+			sourceTree = "<group>";
+		};
+		71D1EE011648877E001E9688 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				71D1EE021648877E001E9688 /* PushMobage-Info.plist */,
+				71D1EE031648877E001E9688 /* InfoPlist.strings */,
+				71D1EE061648877E001E9688 /* main.m */,
+				71D1EE081648877E001E9688 /* PushMobage-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71D1EDF51648877E001E9688 /* PushMobage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D1EE171648877E001E9688 /* Build configuration list for PBXNativeTarget "PushMobage" */;
+			buildPhases = (
+				71D1EDF21648877E001E9688 /* Sources */,
+				71D1EDF31648877E001E9688 /* Frameworks */,
+				71D1EDF41648877E001E9688 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushMobage;
+			productName = PushMobage;
+			productReference = 71D1EDF61648877E001E9688 /* PushMobage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71D1EDED1648877E001E9688 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Ian Terrell";
+			};
+			buildConfigurationList = 71D1EDF01648877E001E9688 /* Build configuration list for PBXProject "PushMobage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 71D1EDEB1648877E001E9688;
+			productRefGroup = 71D1EDF71648877E001E9688 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71D1EDF51648877E001E9688 /* PushMobage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71D1EDF41648877E001E9688 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D1EE051648877E001E9688 /* InfoPlist.strings in Resources */,
+				71D1EE111648877E001E9688 /* ViewController_iPhone.xib in Resources */,
+				71D1EE141648877E001E9688 /* ViewController_iPad.xib in Resources */,
+				71E9341C1664370B004084DD /* NDKResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71D1EDF21648877E001E9688 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D1EE071648877E001E9688 /* main.m in Sources */,
+				71D1EE0B1648877E001E9688 /* AppDelegate.m in Sources */,
+				71D1EE0E1648877E001E9688 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		71D1EE031648877E001E9688 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71D1EE041648877E001E9688 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		71D1EE0F1648877E001E9688 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71D1EE101648877E001E9688 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		71D1EE121648877E001E9688 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71D1EE131648877E001E9688 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71D1EE151648877E001E9688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71D1EE161648877E001E9688 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71D1EE181648877E001E9688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ian Terrell (8JW2446MJM)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../lib/MobageSDK 2.0.2 - iOS/US/NDK/Release/MobageNDK\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PushMobage/PushMobage-Prefix.pch";
+				INFOPLIST_FILE = "PushMobage/PushMobage-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = PushMobage;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "177FF758-A7F4-4EF2-914E-3977AAB436B2";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		71D1EE191648877E001E9688 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ian Terrell (8JW2446MJM)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../lib/MobageSDK 2.0.2 - iOS/US/NDK/Release/MobageNDK\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PushMobage/PushMobage-Prefix.pch";
+				INFOPLIST_FILE = "PushMobage/PushMobage-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = PushMobage;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "177FF758-A7F4-4EF2-914E-3977AAB436B2";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71D1EDF01648877E001E9688 /* Build configuration list for PBXProject "PushMobage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D1EE151648877E001E9688 /* Debug */,
+				71D1EE161648877E001E9688 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D1EE171648877E001E9688 /* Build configuration list for PBXNativeTarget "PushMobage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D1EE181648877E001E9688 /* Debug */,
+				71D1EE191648877E001E9688 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71D1EDED1648877E001E9688 /* Project object */;
+}
