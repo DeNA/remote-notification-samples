@@ -169,7 +169,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0440;
-				ORGANIZATIONNAME = "Ian Terrell";
+				ORGANIZATIONNAME = ngmoco;
 			};
 			buildConfigurationList = 71D1EDF01648877E001E9688 /* Build configuration list for PBXProject "PushMobage" */;
 			compatibilityVersion = "Xcode 3.2";
