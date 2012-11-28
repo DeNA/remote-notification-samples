@@ -15,6 +15,9 @@
 #import <MobageNDK/MobageNDK.h>
 #import <UIKit/UIKit.h>
 
+#define kMobageNotificationKey @"x"
+#define kMobageExtraInformationIndex 3
+
 #ifndef APP_ID
 #error You must copy Credentials.h.template to Credentials.h in the project, and fill in your app's values!
 #endif
@@ -67,6 +70,10 @@
                     // Create payload for our push notification
                     MBRemoteNotificationPayload *payload = [[MBRemoteNotificationPayload alloc] init];
                     payload.message = @"Message to myself from inside the app!";
+                        
+                    // You can create extras to send as well
+                    payload.extraKeys = @[@"key1", @"key2"];
+                    payload.extraValues = @[@"value1", @"value2"];
                     
                     // Send push notification
                     [MBRemoteNotification sendToUser:user payload:payload withCallbackQueue:dispatch_get_main_queue() onComplete:^(MBSimpleAPIStatus status, NSObject<MBError> *error, NSObject<MBRemoteNotificationResponse> *response) {
@@ -156,10 +163,10 @@
 
 // This method will retrieve the extra information sent along with the push notification.
 - (NSDictionary *)extrasFromNotification:(NSDictionary *)notification {
-    NSArray *mobageInformation = [notification objectForKey:@"x"];
+    NSArray *mobageInformation = [notification objectForKey:kMobageNotificationKey];
     if (mobageInformation == nil)
         return nil;
-    id extras = [mobageInformation objectAtIndex:3];
+    id extras = [mobageInformation objectAtIndex:kMobageExtraInformationIndex];
     if (extras == [NSNull null])
         return nil;
     
