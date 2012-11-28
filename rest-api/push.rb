@@ -28,17 +28,17 @@ $http = Net::HTTP.new($uri.host, $uri.port)
 $http.use_ssl = true
 
 class Push < Thor
-  map "b" => :broadcast
+  map "b" => :broadcast, "u" => :user
   
   def self.set_common_options
-    method_option :debug, :aliases => ["-d"], :banner => "true", :type => :boolean, :desc => "Turn on net/http debug output"    
+    method_option :debug, :aliases => ["-d"], :banner => "true", :type => :boolean, :desc => "Turn on net/http debug output"
+    method_option :dry_run, :banner => "true", :type => :boolean, :desc => "When set, no HTTP request is actually made"
     method_option :extras, :type => :hash, :banner => "key1:value1 key2:value2", :desc => "Extras to send with the push notification"
   end
   
-  desc 'broadcast "message" [-d] [--extras=key:value [key:value ...]]', "Send 'message' to all users of your app"
+  desc 'broadcast "message" [-d] [--dry_run=true] [--extras=key:value [key:value ...]]', "Send 'message' to all users of your app"
   set_common_options
   def broadcast(message)
-    puts options[:extras].inspect
     puts "Sending broadcast message: #{message}"
     path = "/1/#{$app_id}/opensocial/remote_notification/@app/@all"
     send_remote_notification(path, message, options)
@@ -64,6 +64,11 @@ private
     payload["extras"] = options[:extras] if options[:extras]
     payload["sender_id"] = options[:from] if options[:from]
     
+    if options.debug?
+      puts "Payload:"
+      puts payload.to_json
+    end
+    
     params = { "payload" => payload.to_json }
         
     oauth_header = SimpleOAuth::Header.new(method, url, params, $credentials)
@@ -74,9 +79,13 @@ private
     request['Accept'] = 'application/json'
     request['Content-Type'] = 'application/x-www-form-urlencoded'
     
-    response = $http.request(request)
-    puts "Response code: #{response.code}"
-    puts "Response body: #{response.body}"
+    if options.dry_run?
+      puts "Dry run -- nothing sent!"
+    else
+      response = $http.request(request)
+      puts "Response code: #{response.code}"
+      puts "Response body: #{response.body}"
+    end
   end
 end
 
