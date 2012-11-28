@@ -1,4 +1,4 @@
-PushMobage
+PushMobage - iOS
 ===========================
 
 This is an iOS sample app showing you how to use remote notifications.

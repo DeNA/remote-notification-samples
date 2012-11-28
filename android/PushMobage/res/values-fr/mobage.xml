@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="sdkVersion">2.1-20121030-1304.0.0</string>
+    <string name="supportedLanguages">en de es fr it</string><!-- Mobage -->
+    
+    
+    <string name="development_build">Version de développement Mobage\nDiffusion interdite.</string>
+    <string name="no_network_title">Aucune connexion réseau</string>
+    <string name="no_network_message">Assure-toi de ta connexion à un réseau.</string>
+    <string name="coming_soon">Nouvelle fonction à venir !</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Annuler</string>
+    <string name="later">Plus tard</string>
+    <string name="dismiss">Ignorer</string>
+    <string name="saving">Sauvegarde...</string>
+    <string name="osviral_title">Partager __gamename__ :</string>
+    <string name="fb_invite_caption">C\'est parti !</string>
+    <string name="fb_invite_name">Retrouve-moi dans __gamename__ !</string><!-- Notification ids -->
+
+    
+    <string name="notification_id_purchase_complete">1</string><!-- Bank -->
+    
+	
+	<string name="mobacoin">MobaCoin</string>
+	<string name="getting_items">Téléchargement des objets</string>
+    <string name="bank_top_text">Une devise pour tous tes jeux &lt;b&gt;Mobage&lt;/b&gt;.</string>
+    <string name="customer_support_link">&lt;u&gt;Service client&lt;/u&gt;</string>
+    <string name="balance">Solde :</string>
+    <string name="bank_purchase_error">Une erreur s\'est produite lors de ta commande.</string>
+    <string name="bank_purchase_creditFail">Une erreur s\'est produite lors de ta commande. Tu recevras un message dès que nous aurons résolu ce problème.</string>
+    <string name="bank_purchase_cancelled">Ta commande a été annulée.</string>
+    <string name="bank_purchase_success">Ta commande a été validée et ton solde va être mis à jour.</string>
+    <string name="bank_get_item_fail">Erreur lors du téléchargement des objets</string>
+    <string name="back_to_game">Retour au jeu</string>
+    
+    <string name="bank_notif_ticker">Commande de MobaCoin à la banque terminée</string>
+    <string name="bank_notif_title">Commande à la banque terminée</string>
+    <string name="bank_notif_message">Ton solde a été mis à jour : +</string>
+    <string name="purchase_coin_confirm">Confirmer la commande</string>
+    <string name="purchase_coin_message">Veux-tu acheter __quantity__ MobaCoin pour la somme de __price__ ?</string><!-- Debit -->
+    
+    
+    <string name="purchase_item_title">Commander __item__ ?</string><!-- Note the lack of space between quantity and item! -->
+    
+    <string name="purchase_item_message">__quantity____item__ pour __price__ MobaCoin.\nSolde : __balance__</string>
+    <string name="need_more_coins_msg">Cet objet coûte__price__ MobaCoin et tu possèdes __balance__ MobaCoin.</string>
+    <string name="purchase">Commander</string>
+    <string name="need_more_coins">Tu as besoin de MobaCoin</string>
+    <string name="currency_for_all_mobage_games">MobaCoin est la devise utilisée pour tous tes jeux Mobage.</string>
+    <string name="get_coins">En obtenir plus</string><!--  Login -->
+
+    
+    <string name="log_in">Connexion</string>
+    <string name="sign_me_up">M\'inscrire</string>
+    <string name="enter_username">Saisis un nom pour jouer !</string>
+    <string name="forget_password">Mot de passe oublié ?</string>
+    <string name="username_field">Nom (nouveau, déjà existant ou Plus+)</string>
+    <string name="password_field">Mot de passe (4 caractères min.)</string>
+    <string name="user_name_invalid_1">Ton nom Mobage doit comprendre entre 4 et 15 caractères</string>
+    <string name="user_name_invalid_2">Ton nom Mobage ne doit contenir que des caractères alphanumériques, des points et des tirets</string>
+    <string name="password_invalid_1">Ton mot de passe Mobage doit comprendre entre 4 et 25 caractères</string>
+    <string name="password_invalid_2">Ton mot de passe Mobage ne peut contenir d\'espaces</string>
+    <string name="logging_in">Connexion à Mobage</string>
+    <string name="new_mobage_plus_username">Nouveau nom ou nom Mobage ou Plus+</string>
+    <string name="password_min_chars">Mot de passe (4 caractères min.)</string>
+    <string name="no_problem_reset">Aucun souci ! Tu vas recevoir un mot de passe de réinitialisation à l\'adresse utilisée lors de la création du compte Mobage ou Plus+.</string>
+    <string name="one_last_thing">Une dernière chose !</string>
+    <string name="confirm_email">Merci de confirmer l\'adresse e-mail.</string>
+    <string name="mobage_updates">Télécharger les nouveautés Mobage</string>
+    <string name="tos_1">En touchant OK, tu acceptes les </string>
+    <string name="tos_2">Conditions d\'utilisation</string>
+	<string name="tos_3"> et </string>
+	<string name="tos_4">Politique de confidentialité</string>
+	<string name="tos_5"> et tu certifies avoir au moins 14 ans.</string>
+	<string name="email_sent">E-mail envoyé.</string>
+	<string name="email_not_found">Cet e-mail est introuvable dans le système.</string>
+	<string name="email_address">Adresse e-mail</string><!-- Friend Picker -->
+    
+    
+    <string name="mobage_friends">Amis Mobage</string>
+    <string name="current_game">Jeu actuel</string>
+	<string name="choose_up_to">Choisis jusqu\'à __max__ amis</string>
+	<string name="friend_retrieve_fail">Échec de la récupération des données des amis sur le serveur.</string>
+	<string name="please_wait">Merci de patienter...</string>
+	<string name="loading_data">Chargement des données...</string>
+	<string name="friends_left">Amis restants : __numFriends__</string>
+	<string name="checking_gamertag_availability">Vérification de la disponibilité...</string>
+	<string name="invite_sent">Envoi des invitations à tes amis sélectionnés</string>
+	<string name="invite_error">Échec d\'envoi des invitations : </string>
+	<string name="fetching_friends">Recherche de ta liste d\'amis...</string><!-- Exception -->
+    
+    
+    <string name="missing_userid">Identifiant manquant</string>
+    <string name="missing_text">Texte manquant</string>
+    <string name="invalid_mobage">L\'objet Mobage n\'a pas été initialisé</string>
+    <string name="invalid_session">Session non valide</string>
+    <string name="invalid_user_in_session">Session utilisateur non valide</string>
+    <string name="number_userids_more_than_25">Le nombre d\'identifiants ne peut excéder 25</string>
+    <string name="missing_server_mode">Mode serveur manquant</string>
+    <string name="invalid_server_mode">Valeur du mode serveur non valide</string>
+    <string name="cannot_insert_cred_and_user_data">Les données de l\'utilisateur ne peuvent pas être insérées dans l\'objet Mobage car celui-ci n\'a pas été initialisé.</string><!-- Exception needs translation -->
+    
+    
+    <string name="missing_token">Jeton manquant</string>
+    <string name="missing_entries">Entrées manquantes</string>
+
+    <string name="email_invalid">Merci de saisir une adresse e-mail valable.</string>
+    <string name="send">Envoyer</string>
+    <string name="that_name_is_already_taken">Ce nom est déjà pris</string>
+    <string name="looks_like_someone_beat_you_to_it_how_about_one_of_these_mobage_names">Tu t\'es fait devancer. Que penses-tu de ces noms Mobage ?</string>
+    <string name="confirm">Confirmer</string>
+    <string name="user_name_invalid_3">Impossible d\'utiliser ce nom</string><!-- User profile page -->
+    
+    
+    <string name="firstname_hint">Prénom</string>
+    <string name="lastname_hint">Nom</string>
+    <string name="email_hint">Adresse e-mail</string>
+    <string name="aboutme">Qui suis-je ?</string>
+    <string name="aboutme_hint">Je n\'ai encore rien commenté</string>
+    <string name="full_name">Nom complet</string>
+    <string name="change">Modifier</string>
+    <string name="profile_saved">Les modifications du profil ont été sauvegardées.</string>
+    <string name="settings_save_error">Une erreur s\'est produite lors de l\'enregistrement des données. Merci de réessayer plus tard.</string>
+    <string name="select_image">Choisir une image</string><!-- User Account Settings Page -->
+    
+    
+    <string name="account_settings">Paramètres du compte</string>
+    <string name="send_me_game_news_and_updates">Recevoir l\'actualité et les mises à jour du jeu</string>
+    <string name="change_password">Modifier le mot de passe</string>
+    <string name="enter_new_password">Saisir le nouveau mot de passe</string>
+    <string name="confirm_new_password">Saisir le nouveau mot de passe une seconde fois</string>
+    <string name="save_changes">Sauvegarder les modifications</string>
+    <string name="settings_saved">Les paramètres ont été sauvegardés.</string>
+    <string name="password_confirmation_invalid">Les mots de passe ne correspondent pas</string>
+    <string name="unknown_error">Erreur inconnue</string><!-- Other user profile tab texts -->
+    
+    
+    <string name="games_header">Plus de jeux Mobage gratuits</string>
+    <string name="profile_nav_away_title">Quitter cette page</string>
+    <string name="profile_nav_away_body">Tu as procédé à des modifications dans cet onglet. Si tu quittes cette page sans sauvegarder, tes changements seront perdus.</string>
+    <string name="profile_nav_away_discard">Annuler les modifications</string><!--System Messages -->
+    
+    
+    <string name="systemmessage_alert_view_button">Afficher</string>
+    <string name="systemmessage_alert_skip_button">Passer</string>
+    <string name="error_opening_game">Erreur au démarrage du jeu</string><!-- Error messages -->
+    
+    
+    
+    <string name="error_109">Panne de serveur</string>
+	<string name="error_110">Mise à jour requise</string>
+	<string name="error_111">Utilisateur banni</string>
+	<string name="error_112">Accord nécessaire</string>
+	<string name="error_400">Mauvaise requête</string>
+	<string name="error_401">Non autorisé</string>
+	<string name="error_403">Permission refusée</string>
+	<string name="error_404">Enregistrement non trouvé</string><!-- Mobage errors -->
+	
+	
+	<string name="error_10001">Une erreur s\'est produite sur le serveur</string>
+	<string name="error_10002">Réseau indisponible, merci de vérifier la connexion au réseau</string>
+	<string name="error_10003">Données manquantes</string>
+	<string name="error_10004">Données non valides</string>
+	<string name="error_10005">Une erreur inconnue s\'est produite</string>
+	<string name="error_10006">Une erreur s\'est produite durant l\'analyse</string>
+	<string name="error_10007">Jeton d\'authentification introuvable</string>
+	<string name="error_10008">Clé de consommateur introuvable</string>
+	<string name="error_10009">Mobage n\'est pas initialisé</string>
+	<string name="error_10010">Le serveur a retourné une réponse inattendue</string>
+	<string name="error_10011">Aucune campagne active disponible</string><!-- Common API -->
+	
+	
+	<string name="error_20001">Session non valide, merci de vérifier que tu es bien connecté</string>
+	<string name="error_20002">Argument de méthode d\'appel manquant</string>
+	<string name="error_20003">Argument de méthode d\'appel non valide</string>
+	<string name="error_20004">Méthode non implémentée</string>
+	<string name="error_20005">Méthode non supportée</string><!-- Analytics -->
+	
+	
+	<string name="error_30001">Réponse d\'analyses non valide</string>
+	<string name="error_30002">Événement d\'analyse du serveur rejeté</string>
+	<string name="error_30003">Taille de l\'analyse de l\'événement du serveur trop volumineuse</string>
+	<string name="error_30004">Taille de propriété d\'analyse d\'événement du serveur trop volumineuse.</string>
+	<string name="error_30005">L\'événement d\'analyse du serveur contient une série</string><!-- Bank -->
+	
+	
+	<string name="error_40001">Erreur banque : transition d\'état non valide</string>
+	<string name="error_40002">Erreur banque : transaction obsolète</string>
+	<string name="error_40003">Échec de l\'obtention d\'objets pour la banque</string>
+	<string name="error_40004">Échec de l\'achat</string>
+	<string name="error_40005">Échec du crédit de l\'achat</string>
+	<string name="error_40006">Une transaction est déjà en cours</string>
+	<string name="error_40007">Échec inattendu du traitement des informations bancaires</string>
+	<string name="error_40008">Données invalides</string><!-- Other -->
+	
+	
+	<string name="error_50001">Échec du cache de disque</string>
+	<string name="error_50002">Configuration non valide</string>
+	
+	<string name="error_60001">Impossible d\'ouvrir simultanément deux comptes Mobage</string>
+	<string name="error_60002">Utilisateur annulé</string><!-- Login/reg/FB -->
+	
+	
+	<string name="error_70001">Identifiants annulés</string>
+	<string name="error_70002">Nom déjà utilisé</string>
+	<string name="error_70003">Inscription annulée</string>
+	<string name="error_70004">Session Facebook non valide</string>
+	<string name="error_70005">Erreur Facebook</string>
+	<string name="error_70006">Annuler Facebook</string>
+	<string name="error_70007">Connexion en cours</string>
+	
+	<string name="error_80001">Connexion à partir d\'un nom d\'utilisateur différent</string>
+	<string name="error_80002">Impossible d\'ouvrir le jeu sur le marché</string>
+	
+	<string name="error_90001">Trop d\'échecs successifs. Merci de réessayer plus tard.</string>
+</resources>

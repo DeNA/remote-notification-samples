@@ -21,3 +21,25 @@ DerivedData
 .idea/
 
 ios/PushMobage/Credentials.h
+
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+android/PushMobage/bin/
+android/PushMobage/gen/
+
+# Local configuration file (sdk path, etc)
+android/PushMobage/local.properties
+
+android/.metadata
+android/PushMobage/.project
+android/PushMobage/.settings
+
+android/PushMobage/res/values/credentials.xml

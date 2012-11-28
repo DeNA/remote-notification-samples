@@ -1,0 +1,89 @@
+<resources>
+
+  <style name="AppTheme" parent="android:Theme.Light" />
+
+  <style name="Dialog_NoBorder_NoDim" parent="android:Theme.Dialog">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:backgroundDimEnabled">false</item>
+  </style>
+  
+  <style name="Theme.Transparent" parent="android:Theme">
+      <item name="android:windowIsTranslucent">true</item>
+      <item name="android:windowBackground">@android:color/transparent</item>
+      <item name="android:windowContentOverlay">@null</item>
+      <item name="android:windowNoTitle">true</item>
+      <item name="android:windowIsFloating">true</item>
+      <item name="android:backgroundDimEnabled">false</item>
+  </style>
+  
+  <style name="pauseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/mainDialogAnimation</item>
+    </style>
+    
+    <style name="DialogFromBottom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@+style/bottomDrawerDialogAnimationNoFade</item>
+    </style>
+    
+  <style name="WebView.Opaque" parent="android:Theme.Panel" />
+  <style name="WebView.Translucent" parent="android:Theme.Panel">
+      <item name="android:windowIsTranslucent">true</item>
+      <item name="android:backgroundDimEnabled">false</item>
+  </style>
+
+    <style name="mainDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_left</item>
+    </style>
+    
+    <style name="afterShowDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_left</item>
+    </style>
+    
+    <style name="afterShowDialogAnimationNoFade">
+        <item name="android:windowEnterAnimation">@anim/slide_in_left_no_alpha</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_left_no_alpha</item>
+    </style>
+    
+    <style name="bottomDrawerDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+    
+    <style name="bottomDrawerDialogAnimationNoFade">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom_no_alpha</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom_no_alpha</item>
+    </style>
+    
+    <style name="topDrawerDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_top</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_top</item>
+    </style>
+    
+    <style name="topDrawerDialogAnimationNoFade">
+        <item name="android:windowEnterAnimation">@anim/slide_in_top_no_alpha</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_top_no_alpha</item>
+    </style>
+    
+    <style name="switchBackDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+    
+    <style name="switchBackDialogAnimationNoFade">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right_no_alpha</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_right_no_alpha</item>
+    </style>
+    
+    <style name="loginButton">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">0</item>
+      <item name="android:shadowDy">0</item>
+      <item name="android:shadowRadius">1</item>
+      <item name="android:layout_width">120dp</item>
+      <item name="android:layout_height">fill_parent</item>
+    </style>
+    
+</resources>

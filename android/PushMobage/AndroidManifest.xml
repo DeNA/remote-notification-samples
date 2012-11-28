@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionName="1.0" package="com.mobage.ww.sample.hellomobage" xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" xmlns:mbg="http://mobage.com/namespaces/android/manifest">
+  <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="15"/>
+  
+  <permission mbg:gameNeedsToIncludeThisAndChildren="true" android:protectionLevel="signature" android:name="com.mobage.ww.sample.hellomobage.permission.C2D_MESSAGE"/>
+  
+  <uses-permission mbg:gameNeedsToIncludeThisAndChildren="true" android:name="com.mobage.ww.sample.hellomobage.permission.C2D_MESSAGE"/>
+  <uses-permission mbg:gameNeedsToIncludeThisAndChildren="true" android:name="com.google.android.c2dm.permission.RECEIVE"/>
+  <uses-permission mbg:gameNeedsToIncludeThisAndChildren="true" android:name="android.permission.INTERNET"/>
+  <uses-permission mbg:gameNeedsToIncludeThisAndChildren="true" android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission mbg:gameNeedsToIncludeThisAndChildren="true" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission mbg:gameNeedsToIncludeThisAndChildren="true" android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission mbg:gameNeedsToIncludeThisAndChildren="true" android:name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission mbg:gameNeedsToIncludeThisAndChildren="true" android:name="android.permission.VIBRATE"/>
+  <uses-permission mbg:gameNeedsToIncludeThisAndChildren="true" android:name="android.permission.WRITE_SETTINGS"/>
+  <uses-permission mbg:gameNeedsToIncludeThisAndChildren="true" android:name="com.android.vending.BILLING"/>
+  <uses-permission mbg:gameNeedsToIncludeThisAndChildren="true" android:name="android.permission.GET_ACCOUNTS"/>
+  <uses-permission mbg:gameNeedsToIncludeThisAndChildren="true" android:name="android.permission.USE_CREDENTIALS"/>
+  
+	<application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+		<activity android:label="@string/title_activity_hello_mobage" android:name=".PushMobageActivity" android:launchMode="singleTop">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity mbg:gameNeedsToIncludeThisAndChildren="true" android:exported="true" android:label="@string/app_name" android:name="com.mobage.android.us.ServiceHostActivity" android:screenOrientation="landscape"/>
+		<activity mbg:gameNeedsToIncludeThisAndChildren="true" android:exported="true" android:label="@string/app_name" android:name="jp.dena.mobage.android.MobageActivity" android:screenOrientation="portrait"/>
+		<activity mbg:gameNeedsToIncludeThisAndChildren="true" android:configChanges="orientation|keyboard|keyboardHidden" android:name="com.mobage.global.android.ui.MobageWebViewActivity" android:theme="@style/Theme.Transparent"/>
+		<activity mbg:gameNeedsToIncludeThisAndChildren="true" android:configChanges="orientation|keyboard|keyboardHidden" android:name="com.mobage.global.android.ui.NotificationActivity" android:theme="@style/Theme.Transparent"/>
+		<activity mbg:gameNeedsToIncludeThisAndChildren="true" android:label="@string/app_name" android:configChanges="orientation|keyboard|keyboardHidden" android:name="com.mobage.ww.android.social.ui.USUserProfileTabActivity" android:theme="@style/Dialog_NoBorder_NoDim"/>
+		<activity mbg:gameNeedsToIncludeThisAndChildren="true" android:label="@string/app_name" android:configChanges="orientation|keyboard|keyboardHidden" android:name="com.mobage.ww.android.social.ui.USGamesListActivity"/>
+		<activity mbg:gameNeedsToIncludeThisAndChildren="true" android:label="@string/app_name" android:configChanges="orientation|keyboard|keyboardHidden" android:name="com.mobage.ww.android.social.ui.USUserProfileActivity"/>
+		<activity mbg:gameNeedsToIncludeThisAndChildren="true" android:label="@string/app_name" android:configChanges="orientation|keyboard|keyboardHidden" android:name="com.mobage.ww.android.social.ui.USMessageQueueActivity" android:theme="@style/Theme.Transparent"/>
+		<activity mbg:gameNeedsToIncludeThisAndChildren="true" android:label="@string/app_name" android:configChanges="orientation|keyboard|keyboardHidden" android:name="com.mobage.ww.android.social.ui.USUserSettingsActivity"/>
+		<activity mbg:gameNeedsToIncludeThisAndChildren="true" android:label="@string/app_name" android:configChanges="orientation|keyboard|keyboardHidden" android:name="com.mobage.ww.android.social.ui.USAvatarPickerActivity" android:theme="@style/Dialog_NoBorder_NoDim"/>
+		<activity mbg:gameNeedsToIncludeThisAndChildren="true" android:configChanges="orientation|keyboard|keyboardHidden" android:name="com.mobage.global.android.social.common.FacebookInitActivity"/>
+		<activity mbg:gameNeedsToIncludeThisAndChildren="true" android:configChanges="orientation|keyboard|keyboardHidden" android:name="com.mobage.ww.android.bank.ui.USBankActivity" android:launchMode="singleTop" android:theme="@android:style/Theme.Translucent"/>
+		<activity mbg:gameNeedsToIncludeThisAndChildren="true" android:exported="true" android:configChanges="orientation|keyboard|keyboardHidden" android:name="com.mobage.ww.android.social.ui.USFriendPickerActivity" android:theme="@android:style/Theme.Dialog">
+			<action android:name="android.intent.action.VIEW"/>
+			<category android:name="android.intent.category.DEFAULT"/>
+		</activity>
+		<activity mbg:gameNeedsToIncludeThisAndChildren="true" android:exported="true" android:configChanges="orientation|keyboard|keyboardHidden" android:name="com.mobage.global.android.bank.DebitTransactionActivity" android:theme="@android:style/Theme.Translucent"/>
+		<activity mbg:gameNeedsToIncludeThisAndChildren="true" android:configChanges="orientation|keyboard|keyboardHidden" android:name="com.mobage.ww.android.social.ui.USFriendPickerCurrentGameActivity"/>
+		<activity mbg:gameNeedsToIncludeThisAndChildren="true" android:configChanges="orientation|keyboard|keyboardHidden" android:name="com.mobage.ww.android.social.ui.USFriendPickerIntermediateActivity" android:theme="@style/Theme.Transparent"/>
+		<activity mbg:gameNeedsToIncludeThisAndChildren="true" android:configChanges="orientation|keyboard|keyboardHidden" android:name="com.mobage.ww.android.social.ui.USFriendPickerMobageFriendsActivity"/>
+		<service mbg:gameNeedsToIncludeThisAndChildren="true" android:name="com.mobage.global.android.bank.iab.MobageBillingService"/>
+		<receiver mbg:gameNeedsToIncludeThisAndChildren="true" android:name="com.mobage.global.android.bank.iab.BillingReceiver">
+			<intent-filter>
+				<action android:name="com.android.vending.billing.IN_APP_NOTIFY"/>
+				<action android:name="com.android.vending.billing.RESPONSE_CODE"/>
+				<action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver mbg:gameNeedsToIncludeThisAndChildren="true" android:name="com.mobage.global.android.c2dm.C2DMBaseReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+				<category android:name="com.mobage.ww.sample.hellomobage"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+				<category android:name="com.mobage.ww.sample.hellomobage"/>
+			</intent-filter>
+		</receiver>
+	</application>
+</manifest>
