@@ -1,0 +1,119 @@
+================================================================================
+Copyright 2012, DeNA Co., Ltd. All rights reserved
+Proprietary and Confidential
+Do Not Redistribute
+================================================================================
+
+Upgrading from Mobage Native SDK 1.5.x to 2.0
+================================================================================
+This document explains how to update your Mobage Native SDK 1.5.x project to use
+Native SDK 2.0. Be sure to read and complete the instructions in all of the
+following sections:
+    
+    - Updating Files
+    - Linking Additional Required Frameworks
+    - Adding Linker Flags
+    - Adding a URL Scheme
+    - Adding the Mobage Community Button
+    - Adding Support for Remote Notifications
+    - Updating Method Calls in Your App
+
+
+Updating Files
+================================================================================
+Remove the MobageNDK.framework and NDKResources.bundle files from your project
+folder, and replace them with the updated versions from the SDK package.
+
+
+Linking Additional Required Frameworks
+================================================================================
+Version 2.0 of the Native SDK no longer requires your app to include the
+following system frameworks:
+
+    - AVFoundation.framework
+    - iAd.framework
+    - SenTestingKit.framework
+
+You may remove these frameworks from your project if your app does not have
+other dependencies on the frameworks.
+
+In addition, you must add the following frameworks to your app if they are not
+already present:
+
+    - libsqlite3.dylib
+    - MessageUI.framework
+    - Security.framework
+    - StoreKit.framework
+    - Twitter.framework (NOTE: Twitter.framework is not available on iOS 4.3.3.
+      If your app targets iOS 4.3,3, you must set this framework’s target
+      membership to Optional.)
+    - UIKit.framework
+
+See the Programming Guide for a complete list of required frameworks.
+
+
+Adding Linker Flags
+================================================================================
+In your project's settings, add the following linker flags if they are not
+already present:
+
+    -ObjC -lstdc++
+
+If your project targets iOS 4.3.3, you must also include the -fobjc-arc flag:
+
+    -ObjC -lstdc++ -fobjc-arc
+
+
+Adding a URL Scheme
+================================================================================
+Starting in version 2.0, the Native SDK includes support for Facebook Connect,
+which allows your users to sign into Mobage using an existing Facebook account.
+This feature requires that you add an additional URL scheme to your project's
+settings.
+
+To add the URL scheme:
+
+1.  In Xcode, open the Info tab for your app's build target. Expand the URL
+    Types section, then click the "+" icon.
+2.  Change the URL Schemes field to "fb180566588646375<appkey>", where
+    "<appkey>" is the alphanumeric, lowercase-only value at the end of your
+    bundle identifier. For example, if your bundle identifier is
+    "com.mobage.ww.a123.hellomobageios", set the URL Schemes field to
+    "fb180566588646375hellomobageios".
+
+
+Adding the Mobage Community Button
+================================================================================
+All Native SDK 2.0 apps are required to display the Mobage Community Button,
+which must open the Community UI when tapped. See "Adding the Mobage Community
+Button" in the Programming Guide for details about how and where to display the
+Community Button.
+
+NOTE: This requirement replaces the optional branding guidelines for Native SDK
+1.5. If your app displays a Mobage logo according to the optional branding
+guidelines, you must remove the logo from your app and display the Community
+Button instead.
+
+
+Adding Support for Remote Notifications
+================================================================================
+Native SDK 2.0 adds support for remote notifications, also known as push
+notifications. To receive remote notifications, your project's app delegate must
+include code to handle the following messages:
+
+    - didFinishLaunchingWithOptions:
+    - didRegisterForRemoteNotificationsWithDeviceToken:
+
+See the Programming Guide for details about how to handle these messages.
+
+
+Updating Method Calls in Your App
+================================================================================
+Many APIs from Native SDK 1.5 have been deprecated and replaced by new versions
+that use only one callback for each method. The deprecated APIs continue to be
+supported, and apps are not required to migrate to the new APIs at this time.
+However, you may choose to update your code to use the new APIs.
+
+The deprecated APIs are not included in the Native SDK 2.0 API reference. If
+you need documentation for the deprecated APIs, please refer to the
+documentation for Native SDK 1.5.

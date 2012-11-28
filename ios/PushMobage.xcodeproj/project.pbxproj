@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71990DD11666862C00784969 /* MobageNDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71990DCF1666862C00784969 /* MobageNDK.framework */; };
+		71990DD21666862C00784969 /* NDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 71990DD01666862C00784969 /* NDKResources.bundle */; };
+		71990DD41666878600784969 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71990DD31666878600784969 /* AdSupport.framework */; };
 		71D1EDFB1648877E001E9688 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D1EDFA1648877E001E9688 /* UIKit.framework */; };
 		71D1EDFD1648877E001E9688 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D1EDFC1648877E001E9688 /* Foundation.framework */; };
 		71D1EDFF1648877E001E9688 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D1EDFE1648877E001E9688 /* CoreGraphics.framework */; };
@@ -14,8 +17,6 @@
 		71D1EE071648877E001E9688 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D1EE061648877E001E9688 /* main.m */; };
 		71D1EE0B1648877E001E9688 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D1EE0A1648877E001E9688 /* AppDelegate.m */; };
 		71D1EE0E1648877E001E9688 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D1EE0D1648877E001E9688 /* ViewController.m */; };
-		71D1EE111648877E001E9688 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71D1EE0F1648877E001E9688 /* ViewController_iPhone.xib */; };
-		71D1EE141648877E001E9688 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71D1EE121648877E001E9688 /* ViewController_iPad.xib */; };
 		71D1EE22164887DB001E9688 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D1EE1A164887DB001E9688 /* CoreTelephony.framework */; };
 		71D1EE23164887DB001E9688 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D1EE1B164887DB001E9688 /* libsqlite3.dylib */; };
 		71D1EE24164887DB001E9688 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D1EE1C164887DB001E9688 /* MessageUI.framework */; };
@@ -24,12 +25,13 @@
 		71D1EE27164887DB001E9688 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D1EE1F164887DB001E9688 /* StoreKit.framework */; };
 		71D1EE28164887DB001E9688 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D1EE20164887DB001E9688 /* SystemConfiguration.framework */; };
 		71D1EE29164887DB001E9688 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D1EE21164887DB001E9688 /* Twitter.framework */; };
-		71E9341B1664370B004084DD /* MobageNDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E934191664370B004084DD /* MobageNDK.framework */; };
-		71E9341C1664370B004084DD /* NDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 71E9341A1664370B004084DD /* NDKResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		71990D811665A8E800784969 /* Credentials.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Credentials.h; sourceTree = "<group>"; };
+		71990DCF1666862C00784969 /* MobageNDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobageNDK.framework; path = "External/MobageSDK 2.1 - iOS/US/NDK/Release/MobageNDK/MobageNDK.framework"; sourceTree = "<group>"; };
+		71990DD01666862C00784969 /* NDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NDKResources.bundle; path = "External/MobageSDK 2.1 - iOS/US/NDK/Release/MobageNDK/NDKResources.bundle"; sourceTree = "<group>"; };
+		71990DD31666878600784969 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		71D1EDF61648877E001E9688 /* PushMobage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushMobage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D1EDFA1648877E001E9688 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		71D1EDFC1648877E001E9688 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,8 +44,6 @@
 		71D1EE0A1648877E001E9688 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		71D1EE0C1648877E001E9688 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		71D1EE0D1648877E001E9688 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		71D1EE101648877E001E9688 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		71D1EE131648877E001E9688 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		71D1EE1A164887DB001E9688 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		71D1EE1B164887DB001E9688 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		71D1EE1C164887DB001E9688 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -52,8 +52,6 @@
 		71D1EE1F164887DB001E9688 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		71D1EE20164887DB001E9688 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		71D1EE21164887DB001E9688 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
-		71E934191664370B004084DD /* MobageNDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobageNDK.framework; sourceTree = "<group>"; };
-		71E9341A1664370B004084DD /* NDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NDKResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71990DD41666878600784969 /* AdSupport.framework in Frameworks */,
 				71D1EE22164887DB001E9688 /* CoreTelephony.framework in Frameworks */,
 				71D1EE23164887DB001E9688 /* libsqlite3.dylib in Frameworks */,
 				71D1EE24164887DB001E9688 /* MessageUI.framework in Frameworks */,
@@ -72,7 +71,7 @@
 				71D1EDFF1648877E001E9688 /* CoreGraphics.framework in Frameworks */,
 				71D1EDFD1648877E001E9688 /* Foundation.framework in Frameworks */,
 				71D1EDFB1648877E001E9688 /* UIKit.framework in Frameworks */,
-				71E9341B1664370B004084DD /* MobageNDK.framework in Frameworks */,
+				71990DD11666862C00784969 /* MobageNDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,8 +98,9 @@
 		71D1EDF91648877E001E9688 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				71E934191664370B004084DD /* MobageNDK.framework */,
-				71E9341A1664370B004084DD /* NDKResources.bundle */,
+				71990DD31666878600784969 /* AdSupport.framework */,
+				71990DCF1666862C00784969 /* MobageNDK.framework */,
+				71990DD01666862C00784969 /* NDKResources.bundle */,
 				71D1EE1A164887DB001E9688 /* CoreTelephony.framework */,
 				71D1EE1B164887DB001E9688 /* libsqlite3.dylib */,
 				71D1EE1C164887DB001E9688 /* MessageUI.framework */,
@@ -124,8 +124,6 @@
 				71D1EE0A1648877E001E9688 /* AppDelegate.m */,
 				71D1EE0C1648877E001E9688 /* ViewController.h */,
 				71D1EE0D1648877E001E9688 /* ViewController.m */,
-				71D1EE0F1648877E001E9688 /* ViewController_iPhone.xib */,
-				71D1EE121648877E001E9688 /* ViewController_iPad.xib */,
 				71D1EE011648877E001E9688 /* Supporting Files */,
 			);
 			path = PushMobage;
@@ -194,9 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71D1EE051648877E001E9688 /* InfoPlist.strings in Resources */,
-				71D1EE111648877E001E9688 /* ViewController_iPhone.xib in Resources */,
-				71D1EE141648877E001E9688 /* ViewController_iPad.xib in Resources */,
-				71E9341C1664370B004084DD /* NDKResources.bundle in Resources */,
+				71990DD21666862C00784969 /* NDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,22 +218,6 @@
 				71D1EE041648877E001E9688 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		71D1EE0F1648877E001E9688 /* ViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				71D1EE101648877E001E9688 /* en */,
-			);
-			name = ViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		71D1EE121648877E001E9688 /* ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				71D1EE131648877E001E9688 /* en */,
-			);
-			name = ViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -300,8 +280,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ian Terrell (8JW2446MJM)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../lib/MobageSDK 2.0.2 - iOS/US/NDK/Release/MobageNDK\"",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/External/MobageSDK 2.1 - iOS/US/NDK/Release/MobageNDK\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PushMobage/PushMobage-Prefix.pch";
@@ -324,8 +304,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ian Terrell (8JW2446MJM)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../lib/MobageSDK 2.0.2 - iOS/US/NDK/Release/MobageNDK\"",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/External/MobageSDK 2.1 - iOS/US/NDK/Release/MobageNDK\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PushMobage/PushMobage-Prefix.pch";
