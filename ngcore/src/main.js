@@ -55,7 +55,8 @@ function checkIfRemoteNotificationsAreEnabled() {
       if (canBeNotified) {
         console.log("The current user can receive remote notifications.");
       } else {
-        console.log("The current user can NOT receive remote notifications.");
+        // optionally call setRemoteNotificationsEnabled()
+        console.log("The current user can not receive remote notifications.");
       }
     }
   });
