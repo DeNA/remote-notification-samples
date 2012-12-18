@@ -1,0 +1,6 @@
+{
+  "code": [
+    "NGCore/Client/Legacy.js",
+    "./src/main.js"
+  ]
+}
