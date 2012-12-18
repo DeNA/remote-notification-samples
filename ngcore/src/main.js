@@ -68,7 +68,11 @@ function sendRemoteNotificationToSelf() {
       console.log("Error getting current user: " + error.errorCode);
     } else {
       var payload = {
-        message: "Come join my quest!"
+        message: "Come join my quest!",
+        extras: {
+          key1: "value1",
+          key2: "value2"
+        }
       };
       Social.Common.RemoteNotification.send(user.id, payload, function(error, remoteNotification) {
         if (error) {
