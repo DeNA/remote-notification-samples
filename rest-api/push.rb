@@ -20,6 +20,8 @@ rescue
   exit
 end
 
+VALID_GROUPS = %w{ all ios android }
+
 class Push < Thor
   map "b" => :broadcast, "u" => :user
   
@@ -28,11 +30,15 @@ class Push < Thor
     method_option :dry_run, :banner => "true", :type => :boolean, :desc => "When set, no HTTP request is actually made"
     method_option :extras, :type => :hash, :banner => "key1:value1 key2:value2", :desc => "Extras to send with the push notification"
     method_option :badge, :type => :numeric, :banner => "5", :desc => "Badge number to send with the push notification for iOS"
+    method_option :style, :type => :string, :banner => "normal", :desc => "An Android only hint for how to display the notification: normal or largeIcon"
+    method_option :iconUrl, :type => :string, :banner => "url", :desc => "An Android only url for the icon"
     method_option :production, :aliases => ["-p"], :banner => "true", :type => :boolean, :desc => "Send in production instead of sandbox"
+    method_option :staging, :aliases => ["-s"], :banner => "true", :type => :boolean, :desc => "Test in staging instead of live"
   end
   
   desc 'broadcast "message" [-d] [--dry_run=true] [--extras=key:value [key:value ...]]', "Send 'message' to all users of your app"
   set_common_options
+  method_option :group, :type => :string, :banner => "=all", :default => "all", :desc => "Use 'all', 'ios', or 'android' for the group"
   def broadcast(message)
     puts "Sending broadcast message: #{message}"
     send_remote_notification(message, options)
@@ -43,15 +49,20 @@ class Push < Thor
   method_option :from, :banner => "sender_id", :desc => "The id of the sender"
   def user(user_id, message)
     puts "Sending message to #{user_id}: #{message}"
-    send_remote_notification(message, options.merge(:user_id => user_id))
+    send_remote_notification(message, options.merge(:user_id => user_id, :group => "all"))
   end
   
 private
   def send_remote_notification(message, options={})
     app_id = $credentials.delete(:app_id)
 
-    server = "https://app#{'-sandbox' unless options.production?}.mobage.com"
-    path = "/1/#{app_id}/opensocial/remote_notification/@app/@all"
+    server = "https://app#{'-sandbox' unless options.production?}#{'.staging' if options.staging?}.mobage.com"
+    path = "/1/#{app_id}/opensocial/remote_notification/@app"
+    unless VALID_GROUPS.include?(options[:group].downcase)
+      puts "--group must be one of #{VALID_GROUPS.map{|g|"'#{g}'"}.join(', ')} (not '#{options[:group]}')"
+      exit 1
+    end
+    path += "/@#{options[:group]}"
     path += "/#{options.delete(:user_id)}" if options[:user_id]
 
     url = "#{server}#{path}"
@@ -63,6 +74,8 @@ private
     
     payload = { "message" => message }
     payload["badge"] = options[:badge] if options[:badge]
+    payload["style"] = options[:style] if options[:style]
+    payload["iconUrl"] = options[:iconUrl] if options[:iconUrl]
     payload["extras"] = options[:extras] if options[:extras]
     payload["sender_id"] = options[:from] if options[:from]
     
