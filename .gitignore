@@ -47,3 +47,5 @@ android/PushMobage/res/values/credentials.xml
 
 ngcore/build*
 ngcore/configuration.json
+
+android/facebook/bin/
