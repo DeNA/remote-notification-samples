@@ -60,6 +60,7 @@ public class PushMobageActivity extends Activity {
 		try {
 			Mobage mobage = Mobage.getInstance();
 			Resources resources = getResources();
+			Log.i(TAG, "App ID is " + resources.getString(R.string.appId));
 			mobage.initialize(this, ServerMode.SANDBOX, resources.getString(R.string.appId), "1.0", resources.getString(R.string.consumerKey), resources.getString(R.string.consumerSecret));
 		} catch (EventReportException e) {
 			Log.e(TAG, e.getMessage(), e);
@@ -80,20 +81,6 @@ public class PushMobageActivity extends Activity {
 					break;
 				case success:
 					Log.i(TAG, "User login successful");
-
-					// Now that we're logged in, we're going to sign up for remote notifications
-					RemoteNotification.setRemoteNotificationsEnabled(true, new RemoteNotification.ISetRemoteNotificationsEnabledCallback() {
-						public void onComplete(SimpleAPIStatus status, Error error) {
-							switch (status) {
-							case error:
-								Log.i(TAG, "The setRemoteNotificationsEnabled call experienced the error: " + error.getDescription());
-								break;
-							case success:
-								Log.i(TAG, "User successfully registered for remote notifications!");
-								break;
-							}
-						}
-					});
 
 					// We're going to get the current user so that we know we have a valid username who can receive remote notifications
 					People.getCurrentUser(new People.IGetCurrentUserCallback() {
@@ -127,6 +114,21 @@ public class PushMobageActivity extends Activity {
 										}
 									}
 								}); // RemoteNotification.send
+							    
+							    // Let's double check to make sure our notifications are enabled.
+								RemoteNotification.getRemoteNotificationsEnabled(new RemoteNotification.IGetRemoteNotificationsEnabledCallback() {
+									public void onComplete(SimpleAPIStatus status, Error error, boolean enabled) {
+										switch(status) {
+										case success:
+											Log.i(TAG, "Remote Notification enabled? " + enabled);
+											break;
+										case error:
+											Log.i(TAG, "Error in getRemoteNotificationsEnabled: " + error.getDescription());
+											break;
+										} 
+									}
+								}); // RemoteNotification.getRemoteNotificationsEnabled
+								
 								break;
 							}
 						}
@@ -135,21 +137,6 @@ public class PushMobageActivity extends Activity {
 				}
 			}
 		}); // Service.executeLogin
-	    
-	    // Let's double check to make sure our notifications are enabled. They may not be the first time this is run due to
-	    // network delays, but subsequent runs should show that they're enabled.
-		RemoteNotification.getRemoteNotificationsEnabled(new RemoteNotification.IGetRemoteNotificationsEnabledCallback() {
-			public void onComplete(SimpleAPIStatus status, Error error, boolean enabled) {
-				switch(status) {
-				case success:
-					Log.i(TAG, "Remote Notification enabled? " + enabled);
-					break;
-				case error:
-					Log.i(TAG, "Error in getRemoteNotificationsEnabled: " + error.getDescription());
-					break;
-				} 
-			}
-		});
 	}
 	
 	@Override
