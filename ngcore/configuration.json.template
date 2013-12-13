@@ -1,9 +1,0 @@
-{
-  "appId": "your-app-name-Android",
-  "requireMobageLogin": true,
-  "socialConsumerCredentials":{
-      "androidKey":"your-key",
-      "androidSecret":"your-secret"
-  },
-  "socialServer":"app-sandbox.mobage.com"
-}
